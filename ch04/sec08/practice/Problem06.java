@@ -5,38 +5,27 @@ import java.util.Scanner;
 public class Problem06 {
 
 	public static void main(String[] args) {
-		
-		//#1
-		int Number;
-		int result = 0;
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Input a Number: ");
-		Number = sc.nextInt();
-		
-		if (Number%2 == 1) {
-			for (int i=1; i<=Number; i+=2) {
-				result += i;
-			} 
-		} else { //if (Number%2 == 0)
-			for (int i=2; i<=Number; i+=2) {
-				result += i;
-			} 
-		}
-		System.out.println("result: " + result);
-		sc.close();
-		
-		//#1_a
-		
-		
-		//#2
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("A Num please: ");
-//		int n = sc.nextInt();
-//		int sum = 0;
-//		int oddOrEven = n%2; // 0 or 1
-//		for (int i=oddOrEven; i<=n; i+=2) {
-//			sum+=i;
-//		}
-//		System.out.printf("result: %d", sum);
-	}
+		 // 입력 받은 숫자가 홀수인 경우에는, 입력 값까지 홀수의 합을 출력합니다
+		 // 입력 받은 숫자가 짝수인 경우에는, 입력 값까지 짝수의 합을 출력합니다
+		    System.out.println("숫자를 입력하세요");
+		    
+		    Scanner sc = new Scanner(System.in);
+		    int number = sc.nextInt();
+		    int sum = 0;
+		    
+		    // 짝수
+		    if(number%2 == 0) {
+		      for (int i=0; i <= number ; i+=2) {
+		        sum += i;
+		      }
+		    // 홀수 
+		    }else {
+		      for (int i=1; i <= number ; i+=2) {
+		        sum += i;
+		      }
+		    }
+		    
+		    System.out.println("결과값: " + sum);
+		    
+		  }
 }

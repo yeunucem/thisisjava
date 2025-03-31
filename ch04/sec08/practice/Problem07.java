@@ -9,7 +9,7 @@ public class Problem07 {
 		Random random = new Random();
 
 		System.out.println("===========================");
-		System.out.println("[숫자맞추기게임 시작]");
+		System.out.println("   [숫자맞추기게임 시작]   ");
 		System.out.println("===========================");
 
 			boolean playAgain = true;
@@ -30,8 +30,6 @@ public class Problem07 {
 						System.out.println("맞았습니다");
 						break;
 					}
-
-
 				}
 
 				System.out.println("게임을 종료하시겠습니까? (y/n) >> ");
@@ -39,7 +37,7 @@ public class Problem07 {
 				playAgain = (response == 'n' || response == 'N');
 
 				System.out.println("===========================");
-				System.out.println("[숫자맞추기게임 종료]");
+				System.out.println("   [숫자맞추기게임 종료]   ");
 				System.out.println("===========================");
 				scanner.close();
 			}

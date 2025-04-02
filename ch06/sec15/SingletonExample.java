@@ -7,13 +7,14 @@ public class SingletonExample {
 		Singleton obj2 = new Singleton();  //컴파일 에러
 		*/
 		
-		//정적 메소드를 호출해서 싱글톤 객체 얻
+		//정적 메소드를 호출해서 싱글톤 객체 얻음
 		Singleton obj1 = Singleton.getInstance();
 		Singleton obj2 = Singleton.getInstance();
 		
-		//동일한 객체를 참조하는지 확
+		//동일한 객체를 참조하는지 확인
 		if(obj1 == obj2) {
-			System.out.println("같은 Singleton 객체 입니다.");
+			System.out.println("같은 Singleton 객체 입니다." + obj1 + obj2);
+			//obj1,2 주소값 구하려고 붙인 것!
 		} else {
 			System.out.println("다른 Singleton 객체 입니다.");
 		}

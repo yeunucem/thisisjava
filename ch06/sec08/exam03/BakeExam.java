@@ -3,37 +3,39 @@ package ch06.sec08.exam03;
 public class BakeExam {
 
 	public static void main(String[] args) {
-		// 팥붕 2개 슈붕 2개 만들기
-		FishBread[] fb = new FishBread[4];
+		// 팥붕 3개 슈붕 4개 호떡 2개 씨앗 4개
+		// 붕 전체 7개
+		FishBread[] fb = new FishBread[7];
+		// 호 전체 6개
+		HoBread[] hb = new HoBread[6];
 
-		for (int i = 0; i < 2; i++) {
-			fb[i] = new FishBread("팥붕");
+		for (int i = 0; i < 3; i++) {
+			fb[i] = new FishBread("팥붕", 700);
 		}
-		for (int i = 2; i < 4; i++) {
-			fb[i] = new FishBread("슈붕");
+		for (int i = 3; i < 7; i++) {
+			fb[i] = new FishBread("슈붕", 1000);
 		}
 
 		int fbPrice = 0;
 		for (int i = 0; i < fb.length; i++) {
-			System.out.println(fb[i].name + " " + fb[i].price);
 			fbPrice += fb[i].price;
 		}
 
-		HoBread[] hb = new HoBread[4];
-
 		for (int j = 0; j < 2; j++) {
-			hb[j] = new HoBread("호떡");
+			hb[j] = new HoBread("호떡", 700);
 		}
-		for (int j = 2; j < 4; j++) {
-			hb[j] = new HoBread("씨앗");
+		for (int j = 2; j < 6; j++) {
+			hb[j] = new HoBread("씨앗", 1000);
 		}
 
 		int hbPrice = 0;
 		for (int i = 0; i < hb.length; i++) {
-			System.out.println(hb[i].name + " " + hb[i].price);
 			hbPrice += hb[i].price;
 		}
-		System.out.println("총 금액: " + (hbPrice + fbPrice));
+		
+		int total = fbPrice + hbPrice;
+		
+		System.out.println("총 금액: " + total);
 	}
 
 }

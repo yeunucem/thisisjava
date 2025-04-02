@@ -12,4 +12,4 @@ public class Singleton {
 	static Singleton getInstance() {
 		return singleton;
 	}
-}
+}//캘린더랑 비슷?

@@ -12,4 +12,3 @@ public class Car {
 	AllSeasonTire tire4 = new AllSeasonTire();
 }
 
-

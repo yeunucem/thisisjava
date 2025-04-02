@@ -1,4 +1,4 @@
-package ch06.sec10.exam01;
+package ch06.sec15;
 
 public class CalculatorExample {
 	public static void main(String[] args) {
